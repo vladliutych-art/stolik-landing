@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STOLIK.BEL — бронирование столиков в кафе, ресторанах и барах Беларуси</title>
+  <meta name="description" content="STOLIK.BEL — сервис бронирования столиков в лучших кафе, ресторанах, барах и лаунжах Беларуси. Выбирайте место и бронируйте за минуту через Telegram-бот.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍽️</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="noise"></div>
+
+  <!-- ШАПКА -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#" class="logo">
+        <span class="logo__mark">S</span>
+        <span class="logo__text">STOLIK.BEL</span>
+      </a>
+
+      <nav class="nav">
+        <a href="#places" class="nav__link">Заведения</a>
+        <a href="#how" class="nav__link">Как это работает</a>
+        <a href="#about" class="nav__link">О сервисе</a>
+      </nav>
+
+      <div class="header__actions">
+        <a href="https://t.me/STOLIK_BEL_bot" target="_blank" rel="noopener" class="btn btn--sm btn--primary">
+          <span class="btn__icon" aria-hidden="true"></span>
+          Забронировать
+        </a>
+        <button class="burger" id="burger" aria-label="Меню">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#places" class="mobile-menu__link">Заведения</a>
+      <a href="#how" class="mobile-menu__link">Как это работает</a>
+      <a href="#about" class="mobile-menu__link">О сервисе</a>
+      <a href="https://t.me/STOLIK_BEL_bot" target="_blank" rel="noopener" class="btn btn--primary mobile-menu__cta">Забронировать</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ГЛАВНЫЙ ЭКРАН -->
+    <section class="hero">
+      <div class="hero__bg">
+        <div class="hero__glow hero__glow--one"></div>
+        <div class="hero__glow hero__glow--two"></div>
+      </div>
+
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <div class="badge" data-reveal>🍽️ Все заведения Беларуси в одном месте</div>
+
+          <h1 class="hero__title" data-reveal>
+            Столик там, где <span class="grad">хочется</span>
+          </h1>
+
+          <p class="hero__subtitle" data-reveal>
+            STOLIK.BEL объединяет кафе, рестораны, бары и лаунжи по всей стране.
+            Выбирайте место, где хотите провести вечер, — и бронируйте столик
+            за пару минут прямо в Telegram.
+          </p>
+
+          <div class="hero__actions" data-reveal>
+            <a href="https://t.me/STOLIK_BEL_bot" target="_blank" rel="noopener" class="btn btn--primary btn--lg">
+              <span class="btn__icon btn__icon--lg" aria-hidden="true"></span>
+              Забронировать столик
+            </a>
+            <a href="#how" class="btn btn--ghost btn--lg">Как это работает</a>
+          </div>
+
+          <ul class="hero__stats" data-reveal>
+            <li><strong>1 мин</strong><span>на бронирование</span></li>
+            <li><strong>0 ₽</strong><span>комиссии для вас</span></li>
+            <li><strong>24/7</strong><span>бронь в любое время</span></li>
+          </ul>
+        </div>
+
+        <div class="hero__visual" data-reveal>
+          <div class="phone">
+            <div class="phone__notch"></div>
+            <div class="phone__header">
+              <span class="phone__avatar">🤖</span>
+              <div class="phone__names">
+                <strong>STOLIK.BEL Бот</strong>
+                <span>онлайн</span>
+              </div>
+            </div>
+            <div class="phone__body">
+              <div class="chat chat--in">
+                <p>Здравствуйте! 👋 Выберите город:</p>
+                <div class="chat__chips">
+                  <span>Минск</span><span>Гомель</span><span>Брест</span>
+                  <span>Витебск</span><span>Гродно</span><span>Могилёв</span>
+                </div>
+              </div>
+              <div class="chat chat--out">
+                <p>Минск 🌆</p>
+              </div>
+              <div class="chat chat--in">
+                <p>Куда хотите? Выбирайте место:</p>
+                <div class="chat__cards">
+                  <div class="chat__card"><span class="chat__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3zm0 0v7"/></svg></span><div><strong>Токио</strong><em>Ресторан · до 4 чел.</em></div></div>
+                  <div class="chat__card"><span class="chat__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 8h1a4 4 0 1 1 0 8h-1"/><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/><line x1="6" x2="6" y1="2" y2="4"/><line x1="10" x2="10" y1="2" y2="4"/><line x1="14" x2="14" y1="2" y2="4"/></svg></span><div><strong>Меркато</strong><em>Кафе · до 2 чел.</em></div></div>
+                  <div class="chat__card"><span class="chat__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3h14"/><path d="m5 3 7 8 7-8"/><path d="M12 11v10"/><path d="M8 21h8"/></svg></span><div><strong>Небо</strong><em>Бар · до 6 чел.</em></div></div>
+                </div>
+              </div>
+              <div class="chat chat--out chat--reply">
+                <p>Забронировать «Токио» на 19:00 ✅</p>
+              </div>
+              <div class="chat chat--in">
+                <p class="chat__done">🎉 Готово! Столик забронирован. До встречи!</p>
+              </div>
+            </div>
+          </div>
+          <div class="phone__shadow"></div>
+        </div>
+      </div>
+
+      <div class="hero__marquee">
+        <div class="marquee__track">
+          <span>Кафе</span><span>·</span><span>Рестораны</span><span>·</span>
+          <span>Бары</span><span>·</span><span>Лаунжи</span><span>·</span>
+          <span>Кофейни</span><span>·</span><span>Пабы</span><span>·</span>
+          <span>Бистро</span><span>·</span><span>Кальянные</span><span>·</span>
+          <span>Кафе</span><span>·</span><span>Рестораны</span><span>·</span>
+          <span>Бары</span><span>·</span><span>Лаунжи</span><span>·</span>
+          <span>Кофейни</span><span>·</span><span>Пабы</span><span>·</span>
+          <span>Бистро</span><span>·</span><span>Кальянные</span><span>·</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- НАПРАВЛЕНИЯ -->
+    <section class="section places" id="places">
+      <div class="container">
+        <div class="section__head" data-reveal>
+          <span class="section__tag">Каталог</span>
+          <h2 class="section__title">Что бы вы ни выбрали —<br><span class="grad">у нас всё есть</span></h2>
+          <p class="section__sub">
+            Неважно, хотите ли вы тихий завтрак, деловой обед или шумный вечер —
+            здесь найдутся места на любой вкус и бюджет.
+          </p>
+        </div>
+
+        <div class="places__grid">
+          <a href="https://t.me/STOLIK_BEL_bot" target="_blank" rel="noopener" class="card" data-reveal>
+            <span class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3zm0 0v7"/></svg>
+            </span>
+            <h3>Рестораны</h3>
+            <p>Итальянская, японская, грузинская и другие кухни со всей страны.</p>
+          </a>
+          <a href="https://t.me/STOLIK_BEL_bot" target="_blank" rel="noopener" class="card" data-reveal>
+            <span class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 8h1a4 4 0 1 1 0 8h-1"/><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/><line x1="6" x2="6" y1="2" y2="4"/><line x1="10" x2="10" y1="2" y2="4"/><line x1="14" x2="14" y1="2" y2="4"/></svg>
+            </span>
+            <h3>Кафе и кофейни</h3>
+            <p>Уютные места для встреч, завтраков и спокойных вечеров.</p>
+          </a>
+          <a href="https://t.me/STOLIK_BEL_bot" target="_blank" rel="noopener" class="card" data-reveal>
+            <span class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3h14"/><path d="m5 3 7 8 7-8"/><path d="M12 11v10"/><path d="M8 21h8"/></svg>
+            </span>
+            <h3>Бары и лаунжи</h3>
+            <p>Коктейльные карты, живая музыка и атмосфера для разговоров по душам.</p>
+          </a>
+          <a href="https://t.me/STOLIK_BEL_bot" target="_blank" rel="noopener" class="card" data-reveal>
+            <span class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 11h1a3 3 0 0 1 0 6h-1"/><path d="M9 12v6"/><path d="M13 12v6"/><path d="M14 7.5c-1 0-1.5.5-2.5.5s-1.5-.5-2.5-.5c-1 0-1.5.5-2.5.5"/><path d="M17 8v12a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2V8"/><path d="M9 8V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v4"/></svg>
+            </span>
+            <h3>Пабы и бистро</h3>
+            <p>Демократичные цены, крафтовое пиво и закуски без пафоса.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- КАК ЭТО РАБОТАЕТ -->
+    <section class="section how" id="how">
+      <div class="container">
+        <div class="section__head" data-reveal>
+          <span class="section__tag">Просто</span>
+          <h2 class="section__title">Три шага до столика</h2>
+        </div>
+
+        <div class="steps">
+          <div class="step" data-reveal>
+            <span class="step__num">01</span>
+            <span class="step__emoji">🤖</span>
+            <h3>Откройте бота</h3>
+            <p>Перейдите по кнопке и нажмите «Старт» — регистрация не нужна.</p>
+          </div>
+          <div class="step__line" aria-hidden="true"></div>
+          <div class="step" data-reveal>
+            <span class="step__num">02</span>
+            <span class="step__emoji">📍</span>
+            <h3>Выберите место</h3>
+            <p>Укажите город, время и количество гостей — бот подберёт варианты.</p>
+          </div>
+          <div class="step__line" aria-hidden="true"></div>
+          <div class="step" data-reveal>
+            <span class="step__num">03</span>
+            <span class="step__emoji">✅</span>
+            <h3>Подтвердите бронь</h3>
+            <p>Столик закреплён за вами. Останется просто прийти и отдохнуть.</p>
+          </div>
+        </div>
+
+        <div class="how__cta" data-reveal>
+          <a href="https://t.me/STOLIK_BEL_bot" target="_blank" rel="noopener" class="btn btn--primary btn--lg">
+            <span class="btn__icon btn__icon--lg" aria-hidden="true"></span>
+            Открыть бота
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- О СЕРВИСЕ -->
+    <section class="section about" id="about">
+      <div class="container about__inner">
+        <div class="about__text" data-reveal>
+          <span class="section__tag">STOLIK.BEL</span>
+          <h2 class="section__title">Место для каждого<br><span class="grad">повода</span></h2>
+          <p class="section__sub">
+            STOLIK.BEL — это сервис, который собирает заведения общественного питания
+            по всей Беларуси в одном удобном месте. Мы помогаем вам находить
+            лучшие кафе, рестораны и бары и бронировать столики без звонков,
+            ожидания и лишних движений.
+          </p>
+        </div>
+
+        <div class="about__points" data-reveal>
+          <div class="point">
+            <span class="point__icon">⚡</span>
+            <div>
+              <h4>Быстро</h4>
+              <p>Бронь занимает меньше минуты — от выбора до подтверждения.</p>
+            </div>
+          </div>
+          <div class="point">
+            <span class="point__icon">🤝</span>
+            <div>
+              <h4>Без звонков</h4>
+              <p>Никаких разговоров по телефону — всё общение с ботом в Telegram.</p>
+            </div>
+          </div>
+          <div class="point">
+            <span class="point__icon">🗺️</span>
+            <div>
+              <h4>Вся Беларусь</h4>
+              <p>Города, посёлки и курорты — ищите столик там, где вы находитесь.</p>
+            </div>
+          </div>
+          <div class="point">
+            <span class="point__icon">💬</span>
+            <div>
+              <h4>Напоминания</h4>
+              <p>Бот напомнит о визите и поможет изменить бронь, если планы изменились.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ФИНАЛЬНЫЙ ПРИЗЫВ -->
+    <section class="section final">
+      <div class="container">
+        <div class="final__box" data-reveal>
+          <div class="final__glow"></div>
+          <h2 class="final__title">Куда идём сегодня?</h2>
+          <p class="final__sub">
+            Откройте Telegram-бота и забронируйте столик в любимом месте прямо сейчас.
+          </p>
+          <a href="https://t.me/STOLIK_BEL_bot" target="_blank" rel="noopener" class="btn btn--primary btn--lg">
+            <span class="btn__icon btn__icon--lg" aria-hidden="true"></span>
+            Забронировать столик
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ПОДВАЛ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#" class="logo">
+        <span class="logo__mark">S</span>
+        <span class="logo__text">STOLIK.BEL</span>
+      </a>
+      <p class="footer__note">STOLIK.BEL — кафе, рестораны, бары · вся Беларусь</p>
+      <a href="https://t.me/STOLIK_BEL_bot" target="_blank" rel="noopener" class="footer__tg">@STOLIK_BEL_bot</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
+
