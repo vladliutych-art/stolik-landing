@@ -395,39 +395,40 @@ body {
   position: relative;
   z-index: 2;
   width: 352px;
-  border-radius: 46px;
-  background: #1b1b1f;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  box-shadow: 0 40px 80px -24px rgba(255, 144, 78, 0.22), 0 24px 48px -24px rgba(0, 0, 0, 0.5);
-  padding: 10px;
+  border-radius: 48px;
+  background: linear-gradient(160deg, #d1d1d6, #b8b8be);
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  box-shadow: 0 40px 80px -24px rgba(255, 144, 78, 0.2), 0 24px 48px -24px rgba(0, 0, 0, 0.35);
+  padding: 8px;
 }
 
 .phone::before,
 .phone::after {
   content: "";
   position: absolute;
-  background: #141417;
+  background: #a4a4ab;
   border-radius: 3px;
 }
 
 .phone::before {
   left: -4px;
-  top: 118px;
+  top: 122px;
   width: 4px;
-  height: 40px;
+  height: 30px;
+  box-shadow: 0 40px 0 0 #a4a4ab, 0 78px 0 0 #a4a4ab;
 }
 
 .phone::after {
   right: -4px;
-  top: 148px;
+  top: 152px;
   width: 4px;
-  height: 64px;
+  height: 66px;
 }
 
 .phone__screen {
-  border-radius: 36px;
+  border-radius: 40px;
   overflow: hidden;
-  background: linear-gradient(160deg, #15161a, #111215);
+  background: linear-gradient(160deg, #f6f6f8, #ededf0);
 }
 
 .phone__statusbar {
@@ -438,18 +439,17 @@ body {
   padding: 8px 18px 4px;
   font-size: 12px;
   font-weight: 600;
-  color: #b6b9c0;
+  color: #1c1c1e;
 }
 
-.phone__cam {
+.phone__island {
   position: absolute;
   left: 50%;
-  top: 9px;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background: #07070a;
-  border: 1px solid rgba(255, 255, 255, 0.07);
+  top: 12px;
+  width: 88px;
+  height: 22px;
+  border-radius: 12px;
+  background: #0a0a0c;
   transform: translateX(-50%);
 }
 
@@ -462,19 +462,19 @@ body {
 .phone__sig {
   width: 17px;
   height: 11px;
-  color: #b6b9c0;
+  color: #1c1c1e;
 }
 
 .phone__wifi {
   width: 13px;
   height: 11px;
-  color: #b6b9c0;
+  color: #1c1c1e;
 }
 
 .phone__bat {
   width: 20px;
   height: 11px;
-  color: #b6b9c0;
+  color: #1c1c1e;
 }
 
 .phone__header {
@@ -482,7 +482,7 @@ body {
   align-items: center;
   gap: 12px;
   padding: 4px 14px 9px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
 }
 
 .phone__avatar {
@@ -490,7 +490,7 @@ body {
   height: 40px;
   border-radius: 50%;
   object-fit: cover;
-  border: 1px solid var(--border);
+  border: 1px solid rgba(0, 0, 0, 0.08);
 }
 
 .phone__names {
@@ -501,16 +501,17 @@ body {
 
 .phone__names strong {
   font-size: 15px;
+  color: #1c1c1e;
 }
 
 .phone__names span {
   font-size: 12px;
-  color: #4ade80;
+  color: #34c759;
 }
 
 .phone__more {
   margin-left: auto;
-  color: var(--text-muted);
+  color: #8e8e93;
   font-size: 22px;
   letter-spacing: 2px;
   line-height: 1;
@@ -531,16 +532,16 @@ body {
   align-items: center;
   gap: 8px;
   padding: 6px 12px 8px;
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
 }
 
 .phone__input-field {
   flex: 1;
-  background: #2a2c32;
+  background: #e8e8ec;
   border-radius: 999px;
   padding: 8px 14px;
   font-size: 12px;
-  color: var(--text-muted);
+  color: #8e8e93;
 }
 
 .phone__input-mic {
@@ -549,7 +550,7 @@ body {
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background: var(--grad);
+  background: #ff904e;
   color: #fff;
 }
 
@@ -568,17 +569,16 @@ body {
 
 .chat--in {
   align-self: flex-start;
-  background: #202228;
-  color: #e6e6e9;
+  background: #f0f0f3;
+  color: #1c1c1e;
   border-bottom-left-radius: 6px;
 }
 
 .chat--out {
   align-self: flex-end;
-  background: #ff8a3d;
-  color: #fff;
+  background: #ffd9b8;
+  color: #6b3a10;
   border-bottom-right-radius: 6px;
-  box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.14);
 }
 
 .chat__chips {
@@ -591,9 +591,9 @@ body {
 .chat__chips span {
   padding: 5px 11px;
   border-radius: 999px;
-  background: #2a2c32;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  color: #d9d9dd;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  color: #3a3a3c;
   font-size: 12px;
 }
 
@@ -606,11 +606,11 @@ body {
 }
 
 .chat--in .chat__time {
-  color: rgba(230, 230, 233, 0.4);
+  color: rgba(28, 28, 30, 0.4);
 }
 
 .chat--out .chat__time {
-  color: rgba(255, 255, 255, 0.65);
+  color: rgba(107, 58, 16, 0.55);
 }
 
 .chat__cards {
@@ -626,21 +626,21 @@ body {
   gap: 10px;
   padding: 8px 10px;
   border-radius: 13px;
-  background: #2a2c32;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.06);
 }
 
 .chat__card strong {
   display: block;
   font-size: 13px;
   line-height: 1.2;
-  color: var(--text);
+  color: #1c1c1e;
 }
 
 .chat__card em {
   font-style: normal;
   font-size: 11px;
-  color: var(--text-dim);
+  color: #8e8e93;
 }
 
 .phone__shadow {
