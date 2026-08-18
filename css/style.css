@@ -394,7 +394,7 @@ body {
 .phone {
   position: relative;
   z-index: 2;
-  width: 336px;
+  width: 352px;
   border-radius: 46px;
   background: #232327;
   border: 1px solid rgba(255, 255, 255, 0.12);
@@ -412,7 +412,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 20px 6px;
+  padding: 8px 18px 4px;
   font-size: 12px;
   font-weight: 600;
   color: var(--text-dim);
@@ -440,7 +440,7 @@ body {
   display: flex;
   align-items: center;
   gap: 12px;
-  padding: 6px 14px 12px;
+  padding: 4px 14px 9px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.07);
 }
 
@@ -477,29 +477,19 @@ body {
 }
 
 .phone__body {
-  padding: 12px 10px 14px;
+  padding: 10px 10px 12px;
   display: flex;
   flex-direction: column;
-  gap: 9px;
-  max-height: 470px;
+  gap: 8px;
+  max-height: 410px;
   overflow: hidden;
-}
-
-.chat__date {
-  align-self: center;
-  font-size: 11px;
-  color: var(--text-muted);
-  background: rgba(255, 255, 255, 0.06);
-  padding: 3px 12px;
-  border-radius: 999px;
-  margin-bottom: 2px;
 }
 
 .phone__input {
   display: flex;
   align-items: center;
   gap: 8px;
-  padding: 8px 12px 10px;
+  padding: 6px 12px 8px;
   border-top: 1px solid rgba(255, 255, 255, 0.07);
 }
 
@@ -529,7 +519,7 @@ body {
 
 .chat {
   max-width: 88%;
-  padding: 11px 14px;
+  padding: 10px 13px;
   border-radius: 16px;
   font-size: 13px;
   line-height: 1.45;
@@ -553,11 +543,11 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
-  margin-top: 10px;
+  margin-top: 8px;
 }
 
 .chat__chips span {
-  padding: 6px 12px;
+  padding: 5px 11px;
   border-radius: 999px;
   background: #5c5c61;
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -573,11 +563,6 @@ body {
   color: var(--text-muted);
 }
 
-.chat__ticks {
-  font-weight: 700;
-  color: rgba(255, 255, 255, 0.85);
-}
-
 .chat--in .chat__time {
   color: rgba(240, 239, 233, 0.45);
 }
@@ -589,15 +574,15 @@ body {
 .chat__cards {
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  margin-top: 10px;
+  gap: 7px;
+  margin-top: 8px;
 }
 
 .chat__card {
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 9px 11px;
+  padding: 8px 10px;
   border-radius: 13px;
   background: #5c5c61;
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -1056,7 +1041,7 @@ body {
 
   .phone {
     width: 100%;
-    max-width: 336px;
+    max-width: 352px;
   }
 
   .hero__actions .btn {
