@@ -394,28 +394,54 @@ body {
 .phone {
   position: relative;
   z-index: 2;
-  width: 330px;
-  border-radius: 42px;
-  background: linear-gradient(160deg, #4a4a4f, #3a3a3e);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 40px 80px -24px rgba(255, 144, 78, 0.22), 0 24px 48px -24px rgba(0, 0, 0, 0.45);
-  padding: 14px;
+  width: 336px;
+  border-radius: 46px;
+  background: #232327;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 40px 80px -24px rgba(255, 144, 78, 0.22), 0 24px 48px -24px rgba(0, 0, 0, 0.5);
+  padding: 10px;
 }
 
-.phone__notch {
-  width: 110px;
-  height: 26px;
-  border-radius: 999px;
-  background: #6a6a70;
-  margin: 0 auto 12px;
+.phone__screen {
+  border-radius: 36px;
+  overflow: hidden;
+  background: linear-gradient(160deg, #43434a, #38383d);
+}
+
+.phone__statusbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px 6px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-dim);
+}
+
+.phone__net {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.phone__sig {
+  width: 17px;
+  height: 11px;
+  color: var(--text-dim);
+}
+
+.phone__bat {
+  width: 20px;
+  height: 11px;
+  color: var(--text-dim);
 }
 
 .phone__header {
   display: flex;
   align-items: center;
   gap: 12px;
-  padding: 10px 12px 14px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 6px 14px 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
 }
 
 .phone__avatar {
@@ -451,12 +477,54 @@ body {
 }
 
 .phone__body {
-  padding: 16px 8px 18px;
+  padding: 12px 10px 14px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  max-height: 600px;
+  gap: 9px;
+  max-height: 470px;
   overflow: hidden;
+}
+
+.chat__date {
+  align-self: center;
+  font-size: 11px;
+  color: var(--text-muted);
+  background: rgba(255, 255, 255, 0.06);
+  padding: 3px 12px;
+  border-radius: 999px;
+  margin-bottom: 2px;
+}
+
+.phone__input {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.phone__input-field {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 999px;
+  padding: 8px 14px;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.phone__input-mic {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--grad);
+  color: #fff;
+}
+
+.phone__input-mic svg {
+  width: 15px;
+  height: 15px;
 }
 
 .chat {
