@@ -86,48 +86,36 @@
         </div>
 
         <div class="hero__visual" data-reveal>
-          <div class="phone">
-            <div class="phone__notch"></div>
-            <div class="phone__header">
-              <img src="assets/bot_avatar.png" alt="STOLIK.BEL" class="phone__avatar">
-              <div class="phone__names">
-                <strong>STOLIK.BEL</strong>
-                <span>бот · онлайн</span>
-              </div>
-              <span class="phone__more">⋯</span>
+          <div class="chat3d" aria-label="Пример переписки с ботом">
+            <div class="bubble bubble--in">
+              🍽 <b>STOLIK.BEL</b> - добро пожаловать! 🎉<br>
+              Мы бронируем столики по всей Беларуси. Напишите бронью одним
+              сообщением - и столик ваш. ⚡
             </div>
-            <div class="phone__body">
-              <div class="chat chat--in">
-                <p>Привет! 👋 Выберите город:</p>
-                <div class="chat__chips">
-                  <span>Минск</span><span>Гомель</span><span>Брест</span>
-                </div>
-                <span class="chat__time">19:02</span>
-              </div>
-              <div class="chat chat--out">
-                <p>Минск</p>
-                <span class="chat__time">19:02 <b class="chat__ticks">✓✓</b></span>
-              </div>
-              <div class="chat chat--in">
-                <p>Отлично! Вот что свободно:</p>
-                <div class="chat__cards">
-                  <div class="chat__card"><div><strong>Токио</strong><em>Ресторан · на 19:30</em></div></div>
-                  <div class="chat__card"><div><strong>Меркато</strong><em>Кафе · на 19:30</em></div></div>
-                  <div class="chat__card"><div><strong>Небо</strong><em>Бар · на 19:30</em></div></div>
-                </div>
-                <span class="chat__time">19:02</span>
-              </div>
-              <div class="chat chat--out">
-                <p>Забронируйте «Токио»: завтра 19:30, 2 гостя</p>
-                <span class="chat__time">19:03 <b class="chat__ticks">✓✓</b></span>
-              </div>
-              <div class="chat chat--in">
-                <p>✅ Готово! «Токио», завтра 19:30, 2 гостя. До встречи!</p>
-                <span class="chat__time">19:03</span>
-              </div>
+            <div class="bubble bubble--out">столик в Минске на завтра на двоих</div>
+            <div class="bubble bubble--in">
+              <b>🔍 Нашёл по запросу «Минск»:</b><br>
+              <span class="bubble__line">1. 🍽 Токио - Ресторан</span>
+              <span class="bubble__line">2. 🍽 Меркато - Кафе</span>
+              <span class="bubble__line">3. 🍽 Небо - Бар</span>
+            </div>
+            <div class="bubble bubble--in bubble--card">
+              <b>✅ Проверьте бронь:</b><br>
+              <span class="bubble__dash">─────────────</span>
+              🍽 <b>Токио</b> - Ресторан<br>
+              📍 г. Минск, ул. Немига, 12<br>
+              <span class="bubble__dash">─────────────</span>
+              📅 завтра в <b>19:30</b> · 👥 2 гост.
+            </div>
+            <div class="bubble bubble--out">Всё верно ✅</div>
+            <div class="bubble bubble--in bubble--card bubble--ok">
+              <b>🎉 Бронь отправлена!</b><br>
+              <span class="bubble__dash">─────────────</span>
+              🍽 Токио · 📍 г. Минск, ул. Немига, 12<br>
+              <span class="bubble__dash">─────────────</span>
+              <span class="bubble__muted">Мы свяжемся с заведением и подтвердим бронь. О статусе вам напишем. 😊</span>
             </div>
           </div>
-          <div class="phone__shadow"></div>
         </div>
       </div>
 
