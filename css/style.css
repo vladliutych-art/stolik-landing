@@ -723,18 +723,6 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-.step__emoji {
-  display: grid;
-  place-items: center;
-  width: 56px;
-  height: 56px;
-  border-radius: 16px;
-  background: var(--accent-soft);
-  border: 1px solid var(--border);
-  font-size: 26px;
-  margin-bottom: 20px;
-}
-
 .step h3 {
   font-family: var(--font-display);
   font-size: 17px;
@@ -781,8 +769,6 @@ body {
 }
 
 .point {
-  display: flex;
-  gap: 18px;
   padding: 22px 24px;
   border-radius: 18px;
   background: var(--card);
@@ -795,17 +781,6 @@ body {
   transform: translateX(6px);
   border-color: rgba(232, 114, 42, 0.35);
   box-shadow: var(--shadow-card-hover);
-}
-
-.point__icon {
-  display: grid;
-  place-items: center;
-  width: 46px;
-  height: 46px;
-  flex-shrink: 0;
-  border-radius: 14px;
-  background: var(--accent-soft);
-  font-size: 22px;
 }
 
 .point h4 {
