@@ -5,25 +5,25 @@
    ========================================================= */
 
 :root {
-  --bg: #fdf8f1;
-  --bg-soft: #f6efe4;
+  --bg: #c8ff2e;
+  --bg-soft: #ffb84d;
   --card: #ffffff;
   --card-hover: #faf9f7;
-  --border: #e9e2d6;
-  --border-strong: #dbd2c2;
+  --border: rgba(66, 92, 0, 0.16);
+  --border-strong: rgba(66, 92, 0, 0.28);
   --text: #1d1c1a;
   --text-dim: #4f4d49;
   --text-muted: #84817b;
-  --accent: #e8722a;
-  --accent-2: #d4611c;
-  --accent-soft: rgba(232, 114, 42, 0.12);
-  --grad: linear-gradient(120deg, #e8722a, #d4611c);
+  --accent: #ff5a00;
+  --accent-2: #e64a00;
+  --accent-soft: rgba(255, 90, 0, 0.13);
+  --grad: linear-gradient(120deg, #ff6a00, #ff4d00);
   --radius: 20px;
   --font: "Inter", system-ui, sans-serif;
   --font-display: "Playfair Display", Georgia, serif;
   --maxw: 1180px;
   --shadow-card: 0 10px 30px -14px rgba(29, 28, 26, 0.1);
-  --shadow-card-hover: 0 22px 44px -18px rgba(232, 114, 42, 0.25);
+  --shadow-card-hover: 0 22px 44px -18px rgba(255, 90, 0, 0.28);
 }
 
 * {
@@ -39,8 +39,8 @@ html {
 body {
   font-family: var(--font);
   background:
-    radial-gradient(1100px 500px at 85% -5%, rgba(232, 114, 42, 0.07), transparent 60%),
-    linear-gradient(180deg, #fdf8f1 0%, #fbf3e6 100%);
+    radial-gradient(1100px 500px at 85% -5%, rgba(255, 90, 0, 0.16), transparent 60%),
+    linear-gradient(180deg, #c8ff2e 0%, #d8ff5c 35%, #ffcf6e 72%, #ffb84d 100%);
   color: var(--text);
   line-height: 1.6;
   overflow-x: hidden;
@@ -139,7 +139,7 @@ body {
 }
 
 .header.scrolled {
-  background: rgba(253, 248, 241, 0.85);
+  background: rgba(200, 255, 46, 0.88);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   box-shadow: 0 1px 0 rgba(29, 28, 26, 0.06);
@@ -236,7 +236,7 @@ body {
   flex-direction: column;
   gap: 6px;
   padding: 12px 24px 24px;
-  background: rgba(253, 248, 241, 0.97);
+  background: rgba(200, 255, 46, 0.97);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--border);
@@ -456,7 +456,7 @@ body {
 
 .chat--in {
   align-self: flex-start;
-  background: #f2e9dc;
+  background: #e6f5ad;
   color: #544b3d;
   border-bottom-left-radius: 4px;
 }
