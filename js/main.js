@@ -57,3 +57,24 @@ const revealObserver = new IntersectionObserver(
 document.querySelectorAll("[data-reveal]").forEach((el) => {
   revealObserver.observe(el);
 });
+
+// 3D-наклон карточек за курсором
+const tiltables = document.querySelectorAll(".card, .step, .point, .final__box");
+const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+const finePointer = window.matchMedia("(pointer: fine)").matches;
+
+if (!reducedMotion && finePointer) {
+  tiltables.forEach((el) => {
+    el.addEventListener("mousemove", (e) => {
+      const r = el.getBoundingClientRect();
+      const px = (e.clientX - r.left) / r.width - 0.5;
+      const py = (e.clientY - r.top) / r.height - 0.5;
+      el.style.setProperty("--rx", `${(-py * 9).toFixed(2)}deg`);
+      el.style.setProperty("--ry", `${(px * 9).toFixed(2)}deg`);
+    });
+    el.addEventListener("mouseleave", () => {
+      el.style.setProperty("--rx", "0deg");
+      el.style.setProperty("--ry", "0deg");
+    });
+  });
+}
