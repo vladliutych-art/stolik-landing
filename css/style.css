@@ -396,7 +396,7 @@ body {
   z-index: 2;
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 12px;
   max-width: 460px;
 }
 
@@ -436,10 +436,10 @@ body {
 
 .bubble {
   position: relative;
-  padding: 16px 20px;
-  border-radius: 20px;
-  font-size: 14px;
-  line-height: 1.5;
+  padding: 13px 17px;
+  border-radius: 18px;
+  font-size: 13px;
+  line-height: 1.45;
   background: #545454;
   border: 1px solid var(--border);
   color: var(--text);
@@ -493,10 +493,10 @@ body {
 
 .bubble__dash {
   display: block;
-  margin: 8px 0;
+  margin: 6px 0;
   color: rgba(255, 144, 78, 0.5);
   letter-spacing: 1px;
-  font-size: 13px;
+  font-size: 12px;
   line-height: 1;
 }
 
