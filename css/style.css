@@ -20,7 +20,7 @@
   --grad: linear-gradient(120deg, #ff9a52, #f26a16);
   --radius: 20px;
   --font: "Inter", system-ui, sans-serif;
-  --font-display: "Playfair Display", Georgia, serif;
+  --font-display: "Inter", system-ui, sans-serif;
   --maxw: 1180px;
   --shadow-card: 0 10px 30px -14px rgba(0, 0, 0, 0.35);
   --shadow-card-hover: 0 22px 44px -18px rgba(255, 144, 78, 0.3);
