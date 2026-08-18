@@ -870,9 +870,8 @@ body {
     grid-template-columns: 1fr;
   }
 
-  .phone {
-    width: 100%;
-    max-width: 330px;
+  .chat3d {
+    max-width: 100%;
   }
 
   .hero__actions .btn {
