@@ -384,6 +384,22 @@ body {
   margin-top: 2px;
 }
 
+.byn {
+  position: relative;
+  display: inline-block;
+}
+
+.byn::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 0.07em;
+  background: currentColor;
+  transform: translateY(-50%);
+}
+
 /* Телефон-макет (пример переписки) */
 .hero__visual {
   position: relative;
