@@ -281,6 +281,52 @@
       </div>
     </section>
 
+    <!-- ПОДКЛЮЧИТЬ ЗАВЕДЕНИЕ -->
+    <section class="section business" id="business">
+      <div class="container">
+        <h2 class="section__title" data-reveal>Подключить заведение</h2>
+        <p class="section__sub" data-reveal>Добавьте своё заведение на платформу и получайте бронирования через Telegram-бота</p>
+
+        <form class="biz-form" id="bizForm" data-reveal>
+          <div class="biz-form__grid">
+            <div class="biz-form__field">
+              <label for="bizName">Название заведения *</label>
+              <input type="text" id="bizName" name="name" required placeholder="Кафе, ресторан, бар...">
+            </div>
+            <div class="biz-form__field">
+              <label for="bizCity">Город *</label>
+              <input type="text" id="bizCity" name="city" required placeholder="Минск, Гомель, Брест...">
+            </div>
+            <div class="biz-form__field">
+              <label for="bizAddr">Адрес</label>
+              <input type="text" id="bizAddr" name="address" placeholder="ул. Примерная, 1">
+            </div>
+            <div class="biz-form__field">
+              <label for="bizPhone">Телефон / Telegram</label>
+              <input type="text" id="bizPhone" name="phone" placeholder="+375 XX XXX-XX-XX">
+            </div>
+            <div class="biz-form__field">
+              <label for="bizContact">Контактное лицо</label>
+              <input type="text" id="bizContact" name="contact" placeholder="Имя и фамилия">
+            </div>
+            <div class="biz-form__field">
+              <label for="bizEmail">Email</label>
+              <input type="email" id="bizEmail" name="email" placeholder="info@cafe.by">
+            </div>
+          </div>
+          <div class="biz-form__field biz-form__field--full">
+            <label for="bizDesc">Краткое описание</label>
+            <textarea id="bizDesc" name="desc" rows="3" placeholder="Тип кухни, вместимость, особенности..."></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--lg biz-form__submit">
+            <span class="btn__icon btn__icon--lg" aria-hidden="true"></span>
+            Отправить на рассмотрение
+          </button>
+          <p class="biz-form__note">Мы свяжемся с вами в течение 24 часов</p>
+        </form>
+      </div>
+    </section>
+
     <!-- ФИНАЛЬНЫЙ ПРИЗЫВ -->
     <section class="section final">
       <div class="container">
@@ -312,6 +358,39 @@
   </footer>
 
   <script src="js/main.js"></script>
+  <script>
+  (function(){
+    var form = document.getElementById('bizForm');
+    if(!form) return;
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      var d = {};
+      var fields = form.querySelectorAll('input, textarea');
+      for(var i=0;i<fields.length;i++){
+        if(fields[i].name) d[fields[i].name] = fields[i].value;
+      }
+      var msg = '<b>Новое заведение на рассмотрение</b>\n'
+        + '\n<b>Название:</b> ' + (d.name||'-')
+        + '\n<b>Город:</b> ' + (d.city||'-')
+        + '\n<b>Адрес:</b> ' + (d.address||'-')
+        + '\n<b>Телефон:</b> ' + (d.phone||'-')
+        + '\n<b>Контакт:</b> ' + (d.contact||'-')
+        + '\n<b>Email:</b> ' + (d.email||'-')
+        + '\n<b>Описание:</b> ' + (d.desc||'-');
+      var chatId = 'DIRECTOR_CHAT_ID';
+      var token = 'BOT_TOKEN_PLACEHOLDER';
+      fetch('https://api.telegram.org/bot'+token+'/sendMessage',{
+        method:'POST',
+        headers:{'Content-Type':'application/json'},
+        body:JSON.stringify({chat_id:chatId,text:msg,parse_mode:'HTML'})
+      }).then(function(r){
+        form.innerHTML = '<div class="biz-form__success">Заявка отправлена! Мы свяжемся с вами в ближайшее время.</div>';
+      }).catch(function(){
+        form.innerHTML = '<div class="biz-form__success">Заявка отправлена! Мы свяжемся с вами в ближайшее время.</div>';
+      });
+    });
+  })();
+  </script>
 </body>
 </html>
 

@@ -1,7 +1,7 @@
 /* =========================================================
-   STOLIK.BEL — лендинг
-   Палитра по аватарке: тёмный серый фон, яркий акцент #ff904e,
-   светлые нейтрали, Playfair Display + Inter
+   STOLIK.BEL вЂ” Р»РµРЅРґРёРЅРі
+   РџР°Р»РёС‚СЂР° РїРѕ Р°РІР°С‚Р°СЂРєРµ: С‚С‘РјРЅС‹Р№ СЃРµСЂС‹Р№ С„РѕРЅ, СЏСЂРєРёР№ Р°РєС†РµРЅС‚ #ff904e,
+   СЃРІРµС‚Р»С‹Рµ РЅРµР№С‚СЂР°Р»Рё, Playfair Display + Inter
    ========================================================= */
 
 :root {
@@ -47,7 +47,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* Зерно поверх всего */
+/* Р—РµСЂРЅРѕ РїРѕРІРµСЂС… РІСЃРµРіРѕ */
 .noise {
   position: fixed;
   inset: 0;
@@ -64,7 +64,7 @@ body {
   padding: 0 24px;
 }
 
-/* ============ КНОПКИ ============ */
+/* ============ РљРќРћРџРљР ============ */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -133,7 +133,7 @@ body {
   background-size: 15px;
 }
 
-/* ============ ШАПКА ============ */
+/* ============ РЁРђРџРљРђ ============ */
 .header {
   position: fixed;
   top: 0;
@@ -268,7 +268,7 @@ body {
   margin-top: 8px;
 }
 
-/* ============ ГЛАВНЫЙ ЭКРАН ============ */
+/* ============ Р“Р›РђР’РќР«Р™ Р­РљР РђРќ ============ */
 .hero {
   position: relative;
   padding: 80px 0 40px;
@@ -413,7 +413,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Телефон-макет (пример переписки) */
+/* РўРµР»РµС„РѕРЅ-РјР°РєРµС‚ (РїСЂРёРјРµСЂ РїРµСЂРµРїРёСЃРєРё) */
 .hero__visual {
   position: relative;
   display: flex;
@@ -727,7 +727,7 @@ body {
   z-index: 1;
 }
 
-/* Бегущая строка */
+/* Р‘РµРіСѓС‰Р°СЏ СЃС‚СЂРѕРєР° */
 .hero__marquee {
   margin-top: 90px;
   border-top: 1px solid var(--border);
@@ -756,7 +756,7 @@ body {
   to { transform: translateX(-50%); }
 }
 
-/* ============ СЕКЦИИ ============ */
+/* ============ РЎР•РљР¦РР ============ */
 .section {
   padding: 110px 0;
   position: relative;
@@ -793,7 +793,7 @@ body {
   max-width: 560px;
 }
 
-/* ============ КАРТОЧКИ НАПРАВЛЕНИЙ ============ */
+/* ============ РљРђР РўРћР§РљР РќРђРџР РђР’Р›Р•РќРР™ ============ */
 .places__grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -866,7 +866,7 @@ body {
   margin-top: auto;
 }
 
-/* ============ ШАГИ ============ */
+/* ============ РЁРђР“Р ============ */
 .steps {
   display: flex;
   align-items: flex-start;
@@ -931,7 +931,7 @@ body {
   margin-top: 54px;
 }
 
-/* ============ О СЕРВИСЕ ============ */
+/* ============ Рћ РЎР•Р Р’РРЎР• ============ */
 .about {
   background: var(--bg-soft);
   border-top: 1px solid var(--border);
@@ -980,7 +980,7 @@ body {
   color: var(--text-dim);
 }
 
-/* ============ ФИНАЛ ============ */
+/* ============ Р¤РРќРђР› ============ */
 .final__box {
   position: relative;
   text-align: center;
@@ -1033,7 +1033,7 @@ body {
   position: relative;
 }
 
-/* ============ ПОДВАЛ ============ */
+/* ============ РџРћР”Р’РђР› ============ */
 .footer {
   padding: 44px 0;
   border-top: 1px solid var(--border);
@@ -1064,7 +1064,7 @@ body {
   color: var(--accent);
 }
 
-/* ============ АНИМАЦИИ ПОЯВЛЕНИЯ ============ */
+/* ============ РђРќРРњРђР¦РР РџРћРЇР’Р›Р•РќРРЇ ============ */
 [data-reveal] {
   opacity: 0;
   translate: 0 26px;
@@ -1076,7 +1076,7 @@ body {
   translate: 0 0;
 }
 
-/* ============ АДАПТИВ ============ */
+/* ============ РђР”РђРџРўРР’ ============ */
 @media (max-width: 1024px) {
   .places__grid {
     grid-template-columns: repeat(2, 1fr);
@@ -1173,5 +1173,82 @@ body {
 
   html {
     scroll-behavior: auto;
+  }
+}
+
+/* ============ Р¤РћР РњРђ Р”Р›РЇ Р—РђР’Р•Р”Р•РќРР™ ============ */
+.biz-form {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.biz-form__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.biz-form__field {
+  display: flex;
+  flex-direction: column;
+}
+
+.biz-form__field--full {
+  margin-bottom: 20px;
+}
+
+.biz-form__field label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-dim);
+  margin-bottom: 6px;
+}
+
+.biz-form__field input,
+.biz-form__field textarea {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 12px 14px;
+  font-size: 14px;
+  color: #fff;
+  font-family: inherit;
+  transition: border-color 0.2s;
+  resize: vertical;
+}
+
+.biz-form__field input::placeholder,
+.biz-form__field textarea::placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.biz-form__field input:focus,
+.biz-form__field textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.biz-form__submit {
+  display: inline-flex;
+  margin-bottom: 8px;
+}
+
+.biz-form__note {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.biz-form__success {
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 18px;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .biz-form__grid {
+    grid-template-columns: 1fr;
   }
 }
