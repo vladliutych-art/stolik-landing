@@ -394,12 +394,12 @@ body {
 .phone {
   position: relative;
   z-index: 2;
-  width: 352px;
-  border-radius: 48px;
+  width: 392px;
+  border-radius: 52px;
   background: linear-gradient(160deg, #d1d1d6, #b8b8be);
   border: 1px solid rgba(255, 255, 255, 0.55);
   box-shadow: 0 40px 80px -24px rgba(255, 144, 78, 0.2), 0 24px 48px -24px rgba(0, 0, 0, 0.35);
-  padding: 8px;
+  padding: 9px;
 }
 
 .phone::before,
@@ -426,7 +426,7 @@ body {
 }
 
 .phone__screen {
-  border-radius: 40px;
+  border-radius: 44px;
   overflow: hidden;
   background: linear-gradient(160deg, #f6f6f8, #ededf0);
 }
@@ -436,8 +436,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 8px 18px 4px;
-  font-size: 12px;
+  padding: 10px 20px 5px;
+  font-size: 13px;
   font-weight: 600;
   color: #1c1c1e;
 }
@@ -445,10 +445,10 @@ body {
 .phone__island {
   position: absolute;
   left: 50%;
-  top: 12px;
-  width: 88px;
-  height: 22px;
-  border-radius: 12px;
+  top: 14px;
+  width: 96px;
+  height: 24px;
+  border-radius: 13px;
   background: #0a0a0c;
   transform: translateX(-50%);
 }
@@ -456,38 +456,38 @@ body {
 .phone__net {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
+  gap: 7px;
 }
 
 .phone__sig {
-  width: 17px;
-  height: 11px;
+  width: 19px;
+  height: 13px;
   color: #1c1c1e;
 }
 
 .phone__wifi {
-  width: 13px;
-  height: 11px;
+  width: 15px;
+  height: 13px;
   color: #1c1c1e;
 }
 
 .phone__bat {
-  width: 20px;
-  height: 11px;
+  width: 22px;
+  height: 13px;
   color: #1c1c1e;
 }
 
 .phone__header {
   display: flex;
   align-items: center;
-  gap: 12px;
-  padding: 4px 14px 9px;
+  gap: 13px;
+  padding: 5px 15px 10px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.06);
 }
 
 .phone__avatar {
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   object-fit: cover;
   border: 1px solid rgba(0, 0, 0, 0.08);
@@ -500,12 +500,12 @@ body {
 }
 
 .phone__names strong {
-  font-size: 15px;
+  font-size: 16px;
   color: #1c1c1e;
 }
 
 .phone__names span {
-  font-size: 12px;
+  font-size: 13px;
   color: #34c759;
 }
 
@@ -519,19 +519,19 @@ body {
 }
 
 .phone__body {
-  padding: 10px 10px 12px;
+  padding: 11px 11px 13px;
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  max-height: 410px;
+  gap: 9px;
+  max-height: 450px;
   overflow: hidden;
 }
 
 .phone__input {
   display: flex;
   align-items: center;
-  gap: 8px;
-  padding: 6px 12px 8px;
+  gap: 9px;
+  padding: 7px 13px 9px;
   border-top: 1px solid rgba(0, 0, 0, 0.06);
 }
 
@@ -539,31 +539,31 @@ body {
   flex: 1;
   background: #e8e8ec;
   border-radius: 999px;
-  padding: 8px 14px;
-  font-size: 12px;
+  padding: 9px 15px;
+  font-size: 13px;
   color: #8e8e93;
 }
 
 .phone__input-mic {
   display: grid;
   place-items: center;
-  width: 32px;
-  height: 32px;
+  width: 35px;
+  height: 35px;
   border-radius: 50%;
   background: #ff904e;
   color: #fff;
 }
 
 .phone__input-mic svg {
-  width: 15px;
-  height: 15px;
+  width: 17px;
+  height: 17px;
 }
 
 .chat {
   max-width: 82%;
-  padding: 10px 13px;
-  border-radius: 18px;
-  font-size: 13px;
+  padding: 11px 14px;
+  border-radius: 19px;
+  font-size: 14px;
   line-height: 1.45;
 }
 
@@ -584,23 +584,23 @@ body {
 .chat__chips {
   display: flex;
   flex-wrap: wrap;
-  gap: 6px;
-  margin-top: 8px;
+  gap: 7px;
+  margin-top: 9px;
 }
 
 .chat__chips span {
-  padding: 5px 11px;
+  padding: 6px 12px;
   border-radius: 999px;
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.06);
   color: #3a3a3c;
-  font-size: 12px;
+  font-size: 13px;
 }
 
 .chat__time {
   display: block;
   text-align: right;
-  font-size: 10px;
+  font-size: 11px;
   margin-top: 3px;
   color: var(--text-muted);
 }
@@ -616,31 +616,37 @@ body {
 .chat__cards {
   display: flex;
   flex-direction: column;
-  gap: 7px;
-  margin-top: 8px;
+  gap: 8px;
+  margin-top: 9px;
 }
 
 .chat__card {
   display: flex;
   align-items: center;
-  gap: 10px;
-  padding: 8px 10px;
-  border-radius: 13px;
+  gap: 11px;
+  padding: 9px 11px;
+  border-radius: 14px;
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.06);
 }
 
 .chat__card strong {
   display: block;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.2;
   color: #1c1c1e;
 }
 
 .chat__card em {
   font-style: normal;
-  font-size: 11px;
+  font-size: 12px;
   color: #8e8e93;
+}
+
+.chat__card-arrow {
+  margin-left: auto;
+  color: #ff904e;
+  flex-shrink: 0;
 }
 
 .phone__shadow {
@@ -1083,7 +1089,7 @@ body {
 
   .phone {
     width: 100%;
-    max-width: 352px;
+    max-width: 392px;
   }
 
   .hero__actions .btn {
