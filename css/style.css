@@ -389,7 +389,6 @@ body {
   position: relative;
   display: flex;
   justify-content: center;
-  transform: translateY(-48px);
 }
 
 .phone {
