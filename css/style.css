@@ -458,8 +458,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 8px 18px 3px;
-  font-size: 12px;
+  padding: 10px 20px 4px;
+  font-size: 13px;
   font-weight: 600;
   color: #1c1c1e;
 }
@@ -503,13 +503,13 @@ body {
   display: flex;
   align-items: center;
   gap: 12px;
-  padding: 4px 14px 8px;
+  padding: 6px 16px 10px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.06);
 }
 
 .phone__avatar {
-  width: 38px;
-  height: 38px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   object-fit: cover;
   border: 1px solid rgba(0, 0, 0, 0.08);
@@ -522,12 +522,12 @@ body {
 }
 
 .phone__names strong {
-  font-size: 15px;
+  font-size: 16px;
   color: #1c1c1e;
 }
 
 .phone__names span {
-  font-size: 12px;
+  font-size: 13px;
   color: #34c759;
 }
 
@@ -541,33 +541,33 @@ body {
 }
 
 .phone__body {
-  padding: 10px 10px 12px;
+  padding: 14px 14px 16px;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 12px;
 }
 
 .chat__date {
   align-self: center;
-  font-size: 10.5px;
+  font-size: 12px;
   color: #8e8e93;
   background: #e8e8ec;
-  padding: 3px 11px;
+  padding: 4px 13px;
   border-radius: 999px;
 }
 
 .phone__typing {
   align-self: flex-start;
   display: flex;
-  gap: 4px;
-  padding: 11px 13px;
-  border-radius: 18px 18px 18px 6px;
+  gap: 5px;
+  padding: 13px 15px;
+  border-radius: 20px 20px 20px 8px;
   background: #f0f0f3;
 }
 
 .phone__typing i {
-  width: 5px;
-  height: 5px;
+  width: 6px;
+  height: 6px;
   border-radius: 50%;
   background: #8e8e93;
   animation: blink 1.2s infinite;
@@ -596,7 +596,7 @@ body {
   display: flex;
   align-items: center;
   gap: 8px;
-  padding: 6px 12px 8px;
+  padding: 8px 14px 10px;
   border-top: 1px solid rgba(0, 0, 0, 0.06);
 }
 
@@ -604,16 +604,16 @@ body {
   flex: 1;
   background: #e8e8ec;
   border-radius: 999px;
-  padding: 7px 13px;
-  font-size: 12px;
+  padding: 9px 14px;
+  font-size: 13px;
   color: #8e8e93;
 }
 
 .phone__input-mic {
   display: grid;
   place-items: center;
-  width: 30px;
-  height: 30px;
+  width: 34px;
+  height: 34px;
   border-radius: 50%;
   background: #ff904e;
   color: #fff;
@@ -626,10 +626,10 @@ body {
 
 .chat {
   max-width: 82%;
-  padding: 9px 12px;
-  border-radius: 17px;
-  font-size: 12.5px;
-  line-height: 1.4;
+  padding: 11px 14px;
+  border-radius: 18px;
+  font-size: 14px;
+  line-height: 1.45;
 }
 
 .chat--in {
@@ -654,18 +654,18 @@ body {
 }
 
 .chat__chips span {
-  padding: 4px 10px;
+  padding: 5px 12px;
   border-radius: 999px;
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.06);
   color: #3a3a3c;
-  font-size: 11.5px;
+  font-size: 13px;
 }
 
 .chat__time {
   display: block;
   text-align: right;
-  font-size: 10px;
+  font-size: 11px;
   margin-top: 2px;
   color: var(--text-muted);
 }
@@ -689,22 +689,22 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 7px 9px;
-  border-radius: 12px;
+  padding: 10px 12px;
+  border-radius: 14px;
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.06);
 }
 
 .chat__card strong {
   display: block;
-  font-size: 13px;
-  line-height: 1.2;
+  font-size: 14px;
+  line-height: 1.25;
   color: #1c1c1e;
 }
 
 .chat__card em {
   font-style: normal;
-  font-size: 11px;
+  font-size: 12px;
   color: #8e8e93;
 }
 
