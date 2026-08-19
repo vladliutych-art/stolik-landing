@@ -271,7 +271,7 @@ body {
 /* ============ ГЛАВНЫЙ ЭКРАН ============ */
 .hero {
   position: relative;
-  padding: 100px 0 40px;
+  padding: 60px 0 40px;
   overflow: hidden;
 }
 
@@ -418,7 +418,7 @@ body {
   position: relative;
   display: flex;
   justify-content: center;
-  transform: translateY(-40px);
+  transform: translateY(-20px);
 }
 
 .phone {
