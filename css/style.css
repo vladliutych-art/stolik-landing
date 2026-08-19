@@ -271,7 +271,7 @@ body {
 /* ============ ГЛАВНЫЙ ЭКРАН ============ */
 .hero {
   position: relative;
-  padding: 100px 0 0;
+  padding: 100px 0 40px;
   overflow: hidden;
 }
 
