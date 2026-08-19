@@ -290,37 +290,29 @@
         <form class="biz-form" id="bizForm" data-reveal>
           <div class="biz-form__grid">
             <div class="biz-form__field">
+              <label for="bizLegal">Юридическое лицо *</label>
+              <input type="text" id="bizLegal" name="legal" required placeholder="ООО, ИП...">
+            </div>
+            <div class="biz-form__field">
+              <label for="bizUnp">УНП *</label>
+              <input type="text" id="bizUnp" name="unp" required placeholder="XXXXXXXXXX">
+            </div>
+            <div class="biz-form__field">
               <label for="bizName">Название заведения *</label>
               <input type="text" id="bizName" name="name" required placeholder="Кафе, ресторан, бар...">
             </div>
             <div class="biz-form__field">
-              <label for="bizCity">Город *</label>
-              <input type="text" id="bizCity" name="city" required placeholder="Минск, Гомель, Брест...">
+              <label for="bizPhone">Контактный телефон *</label>
+              <input type="tel" id="bizPhone" name="phone" required placeholder="+375 XX XXX-XX-XX">
             </div>
-            <div class="biz-form__field">
-              <label for="bizAddr">Адрес</label>
-              <input type="text" id="bizAddr" name="address" placeholder="ул. Примерная, 1">
+            <div class="biz-form__field biz-form__field--full">
+              <label for="bizFio">ФИО *</label>
+              <input type="text" id="bizFio" name="fio" required placeholder="Имя и фамилия">
             </div>
-            <div class="biz-form__field">
-              <label for="bizPhone">Телефон / Telegram</label>
-              <input type="text" id="bizPhone" name="phone" placeholder="+375 XX XXX-XX-XX">
-            </div>
-            <div class="biz-form__field">
-              <label for="bizContact">Контактное лицо</label>
-              <input type="text" id="bizContact" name="contact" placeholder="Имя и фамилия">
-            </div>
-            <div class="biz-form__field">
-              <label for="bizEmail">Email</label>
-              <input type="email" id="bizEmail" name="email" placeholder="info@cafe.by">
-            </div>
-          </div>
-          <div class="biz-form__field biz-form__field--full">
-            <label for="bizDesc">Краткое описание</label>
-            <textarea id="bizDesc" name="desc" rows="3" placeholder="Тип кухни, вместимость, особенности..."></textarea>
           </div>
           <button type="submit" class="btn btn--primary btn--lg biz-form__submit">
             <span class="btn__icon btn__icon--lg" aria-hidden="true"></span>
-            Отправить на рассмотрение
+            Отправить заявку
           </button>
           <p class="biz-form__note">Мы свяжемся с вами в течение 24 часов</p>
         </form>
@@ -369,14 +361,12 @@
       for(var i=0;i<fields.length;i++){
         if(fields[i].name) d[fields[i].name] = fields[i].value;
       }
-      var msg = '<b>Новое заведение на рассмотрение</b>\n'
-        + '\n<b>Название:</b> ' + (d.name||'-')
-        + '\n<b>Город:</b> ' + (d.city||'-')
-        + '\n<b>Адрес:</b> ' + (d.address||'-')
+      var msg = '<b>Новая заявка на подключение</b>\n'
+        + '\n<b>Юр. лицо:</b> ' + (d.legal||'-')
+        + '\n<b>УНП:</b> ' + (d.unp||'-')
+        + '\n<b>Заведение:</b> ' + (d.name||'-')
         + '\n<b>Телефон:</b> ' + (d.phone||'-')
-        + '\n<b>Контакт:</b> ' + (d.contact||'-')
-        + '\n<b>Email:</b> ' + (d.email||'-')
-        + '\n<b>Описание:</b> ' + (d.desc||'-');
+        + '\n<b>ФИО:</b> ' + (d.fio||'-');
       var chatId = 'DIRECTOR_CHAT_ID';
       var token = 'BOT_TOKEN_PLACEHOLDER';
       fetch('https://api.telegram.org/bot'+token+'/sendMessage',{
