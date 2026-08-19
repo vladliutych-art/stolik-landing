@@ -360,7 +360,7 @@ body {
 .hero__tagline {
   font-size: 14px;
   color: var(--text-dim);
-  margin-top: 20px;
+  margin-top: 12px;
   margin-bottom: 4px;
   letter-spacing: 0.02em;
 }
